@@ -42,7 +42,7 @@ def plot_points_and_lines(points, initial_c, initial_m, final_c, final_m):
     plt.title('Gradient Descent Linear Regression')
     plt.show()
 
-def run(file_path='GitFolder/demo_git/Machine_learning/Linear Regression/data.csv'):
+def run(file_path='data.csv'):
     try:
         points = np.genfromtxt(file_path, delimiter=',')
     except Exception as e:
