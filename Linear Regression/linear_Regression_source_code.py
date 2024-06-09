@@ -28,7 +28,7 @@ def plot_points_and_lines(points, initial_c, initial_m, final_c, final_m):
     x = points[:, 0]
     y = points[:, 1]
 
-    plt.scatter(x, y, color='blue', label='Data points')
+    plt.scatter(x, y, color='blue', label='Data points',alpha=0.7)
 
     initial_y_pred = initial_m * x + initial_c
     plt.plot(x, initial_y_pred, color='red', label='Initial line')
