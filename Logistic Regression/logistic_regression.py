@@ -64,14 +64,3 @@ y_pred = model.predict(X_test)
 
 # Print accuracy
 print("Accuracy:", model.accuracy(y_pred, y_test))
-
-# Plot the results
-plt.figure(figsize=(10, 6))
-plt.scatter(np.arange(len(y_test)), y_test, color='blue', label='True Labels')
-plt.scatter(np.arange(len(y_test)), y_prob, color='red', label='Predicted Probabilities', alpha=0.5)
-plt.axhline(0.5, color='grey', linestyle='--')
-plt.title('Logistic Regression Predictions vs True Labels')
-plt.xlabel('Sample Index')
-plt.ylabel('Probability / Label')
-plt.legend()
-plt.show()
